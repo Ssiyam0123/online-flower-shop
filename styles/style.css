@@ -3,6 +3,9 @@
 *{
     margin: 0;
 }
+button{
+    cursor: pointer;
+}
 
 .first-page{
     /* border: 1px solid rgb(57, 6, 6); */
