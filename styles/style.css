@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -32,14 +32,15 @@ font-weight: 800;
     color: rgba(39, 39, 39, 0.6);
 font-family: Lato;
 font-size: 18px;
-font-weight: 400;
+font-weight: 350;
+margin-top: 25px;
 }
 .first-page-left-side button{
     border-radius: 8px;
     background: rgb(229, 84, 115);
     padding: 20px 43px 20px 43px;
     border: 0px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .first-page-right-side{
@@ -50,25 +51,28 @@ font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
+    /* border: 1px dashed black; */
 }
 .first-page-right-side img{
     width: 80%;
     height: 600px;
     /* margin: 0 auto; */
     margin-top: 50px;
+    border: 2px dashed #E7E1E3;
     
 }
 /* second-page */
 
 .second-page{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     max-width: 1920px;
     height: 850px;
     margin-top: 150px;
     margin-bottom: 250px;
 }
 .second-page-top{
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     /* display: flex; */
     /* flex-direction: column;
     justify-content: center;
@@ -76,12 +80,24 @@ font-weight: 400;
     width: 30%;
     margin: 0 auto;
     text-align: center;
-
+}
+.second-page-top h1{
+    color: rgb(39, 39, 39);
+font-family: Lato;
+font-size: 40px;
+margin-bottom: 20px;
+}
+.second-page-top p{
+    color: rgba(39, 39, 39, 0.6);
+font-family: Lato;
+font-size: 18px;
+margin-bottom: 40px;
 }
 
+
 .second-page-img{
-    border: 2px gray solid;
-    width: 80%;
+    /* border: 2px gray solid; */
+    width: 90%;
     margin: 0 auto;
     
     height: 500px;
@@ -101,13 +117,14 @@ font-weight: 400;
     height: 400px; */
     width: 450px;
     height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 50% 50% 0 0;
     background-color: #F2DEE8;
+    border: 1px dashed #E7E1E3;
 } 
 .first-img img{
     margin-top: 92px;
@@ -116,7 +133,7 @@ font-weight: 400;
     /* height: 400px; */
     width: 450px;
     height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,51 +149,51 @@ font-weight: 400;
     /* height: 400px; */
     width: 450px;
     height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 50% 50% 0 0;
     background-color: #E4ECDC;
+    
 }
 .third-img img{
     margin-top: 48px;
+    
 }
 
 .second-page-anchor{
     /* width: 450px;
     height: 500px; */
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
 }
 .seccond-page-last{
     display: flex; 
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 200px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 100px;
     background-color: #F4F4F4;
 
 }
 .first-icon{
-    border: 0.5px dashed black;
+    border: 3px dashed #E7E1E3;
 }
-.jani-na{
-    /* display: flex; */
-}
+
 .third-page{
     width: 100%;
     margin: 0 auto;
-    border: 5px solid blueviolet;
+    /* border: 5px solid blueviolet; */
     background-color: #FEF6F8;
     height: 620px;
     display: flex;
@@ -190,51 +207,80 @@ font-weight: 400;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-left: 150px;
     
+    
+}
+.third-page-left-side h1{
+    font-family: Lato;
+font-size: 40px;
+}
+.third-page-left-side p{
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 30px;
 }
 .third-page-right-side{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .third-page-right-side img{
     width: 318px;
     height: 420px;
-    border: 10px solid green;
+    /* border: 10px solid green; */
+    border: 2px dashed #E7E1E3;
     
 }
 
 .fourth-page{
     width: 80%;
     margin: 0 auto;
-    border: 10px solid red;
+    /* border: 10px solid red; */
+    margin-top: 130px;
 }
 
 .fourth-page-head{
-    border: 2px solid black;
-    
+    /* border: 2px solid black; */
     margin: 0 auto;
     text-align: center;
-
 }
+
+.fourth-page-head h1{
+    color: rgb(39, 39, 39);
+font-family: Lato;
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.fourth-page-head p{
+    color: rgba(39, 39, 39, 0.6);
+font-family: Lato;
+font-size: 18px;
+}
+
 .fourth-page-img{
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 40px;
 }
 .fourth-page-img img{
    width: 300px;
    height: 300px;
-   border: 1px dashed black;
+   border: 2px dashed #E7E1E3;
    margin-left: 7px;
 }
 .email{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 120px;
+    /* width: 90%;
+    margin: 0 auto; */
     background-image: url('Rectangle\ 9.png');
     background-position: center;
     background-repeat: repeat;
@@ -246,7 +292,20 @@ font-weight: 400;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 120px;
 
+}
+.email h1{
+    color: rgb(39, 39, 39);
+font-family: Lato;
+font-size: 40px;
+}
+.email p{
+    color: rgba(39, 39, 39, 0.6);
+font-family: Lato;
+font-size: 18px;
+margin-top: 16px;
+margin-bottom: 40px;
 }
 .email input{
     width: 500px;
@@ -271,4 +330,21 @@ footer{
     justify-content: center;
     align-items: center;
     background: rgb(17, 16, 16);;
+}
+footer h1{
+    font-family: Lato;
+font-size: 48px;
+color: #E55473;
+}
+footer h2{
+    color: rgba(255, 255, 255, 0.9);
+font-family: Lato;
+font-size: 14px;
+margin-top: 24px;
+margin-bottom: 32px;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.4);
+font-family: Lato;
+font-size: 10px;
 }
