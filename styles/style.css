@@ -1,353 +1,465 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-button{
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(39, 39, 39);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+button {
     cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.first-page{
-    /* border: 1px solid rgb(57, 6, 6); */
-    max-width: 1920px;
-    min-height: 730px;
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* First Page - Hero Section */
+.first-page {
+    width: 100%;
+    min-height: 90vh;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #FCEEF1;
+    padding: 40px 10%;
+    gap: 40px;
 }
 
-.first-page-left-side{
-    /* border: 1px solid rgb(89, 205, 234); */
-    width: 30%;
-    margin: 0 auto;
+.first-page-left-side {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.first-page-left-side-heading{
+.first-page-left-side-heading {
     color: rgb(39, 39, 39);
-font-family: Lato;
-font-size: 60px;
-font-weight: 800;
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
-.first-page-left-side-paragraph{
+
+.first-page-left-side-paragraph {
     color: rgba(39, 39, 39, 0.6);
-font-family: Lato;
-font-size: 18px;
-font-weight: 350;
-margin-top: 25px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.first-page-left-side button{
+
+.first-page-left-side button {
     border-radius: 8px;
     background: rgb(229, 84, 115);
-    padding: 20px 43px 20px 43px;
-    border: 0px;
-    margin-top: 25px;
+    color: #ffffff;
+    padding: 16px 36px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
-.first-page-right-side{
-    /* border: 1px solid yellow; */
-    width: 40%;
-    margin: 0 auto ;
-    max-width: 100%;
+.first-page-left-side button:hover {
+    background: rgb(209, 64, 95);
+}
+
+.first-page-right-side {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    /* border: 1px dashed black; */
 }
-.first-page-right-side img{
-    width: 80%;
-    height: 600px;
-    /* margin: 0 auto; */
-    margin-top: 50px;
-    border: 2px dashed #E7E1E3;
-    
-}
-/* second-page */
 
-.second-page{
-    /* border: 2px solid red; */
-    max-width: 1920px;
-    height: 850px;
-    margin-top: 150px;
-    margin-bottom: 250px;
+.first-page-right-side img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border: 2px dashed #E7E1E3;
+    border-radius: 20px;
 }
-.second-page-top{
-    /* border: 1px dashed black; */
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center;
-    text-align: center; */
-    width: 30%;
-    margin: 0 auto;
+
+/* Second Page - Featured Flowers */
+.second-page {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 10%;
+}
+
+.second-page-top {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
     text-align: center;
 }
-.second-page-top h1{
+
+.second-page-top h1 {
     color: rgb(39, 39, 39);
-font-family: Lato;
-font-size: 40px;
-margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
 }
-.second-page-top p{
+
+.second-page-top p {
     color: rgba(39, 39, 39, 0.6);
-font-family: Lato;
-font-size: 18px;
-margin-bottom: 40px;
+    font-size: 1rem;
 }
 
-
-.second-page-img{
-    /* border: 2px gray solid; */
-    width: 90%;
-    margin: 0 auto;
-    
-    height: 500px;
+.second-page-img {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
-.first-img ,
-.second-img ,
-.third-img{
-   margin-left: 8px;
-} 
 
-.first-img{
-    /* width: 310px;
-    height: 400px; */
-    width: 450px;
-    height: 500px;
-    /* border: 2px solid red; */
+.first-img, .second-img, .third-img {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    aspect-ratio: 4/5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border-radius: 50% 50% 0 0;
-    background-color: #F2DEE8;
+    padding-bottom: 40px;
     border: 1px dashed #E7E1E3;
-} 
-.first-img img{
-    margin-top: 92px;
-}
-.second-img{
-    /* height: 400px; */
-    width: 450px;
-    height: 500px;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50% 50% 0 0;
-    background-color: #DAF0F1;
-}  
-.second-img img{
-    margin-top: 100px;
-}
-.third-img{
-    /* width: 314px; */
-    /* height: 400px; */
-    width: 450px;
-    height: 500px;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50% 50% 0 0;
-    background-color: #E4ECDC;
-    
-}
-.third-img img{
-    margin-top: 48px;
-    
 }
 
-.second-page-anchor{
-    /* width: 450px;
-    height: 500px; */
-    width: 90%;
+.first-img img, .second-img img, .third-img img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.first-img {
+    background-color: #F2DEE8;
+}
+
+.second-img {
+    background-color: #DAF0F1;
+}
+
+.third-img {
+    background-color: #E4ECDC;
+}
+
+.second-page-anchor {
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
-    margin-top: 10px;
     display: flex;
     justify-content: space-around;
-    /* border: 3px solid yellow; */
-}
-.seccond-page-last{
-    display: flex; 
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    height: 200px;
-    /* border: 2px solid black; */
-    margin-top: 100px;
-    background-color: #F4F4F4;
-
-}
-.first-icon{
-    border: 3px dashed #E7E1E3;
-}
-
-.third-page{
-    width: 100%;
-    margin: 0 auto;
-    /* border: 5px solid blueviolet; */
-    background-color: #FEF6F8;
-    height: 620px;
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
 }
-.third-page-left-side{
-    width: 65%;
-    margin: 0 auto;
+
+.second-page-anchor a {
+    flex: 1;
+    min-width: 250px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+.second-page-anchor a:hover {
+    color: rgb(229, 84, 115);
+}
+
+.seccond-page-last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 60px auto 0 auto;
+    padding: 40px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.first-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Third Page - Deal of the Day */
+.third-page {
+    width: 100%;
+    background-color: #FEF6F8;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.third-page-left-side {
+    flex: 1.2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
-    margin-left: 150px;
-    
-    
+    align-items: flex-start;
+    text-align: left;
 }
-.third-page-left-side h1{
-    font-family: Lato;
-font-size: 40px;
+
+.third-page-left-side h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
 }
-.third-page-left-side p{
+
+.third-page-left-side h1 span {
+    color: rgb(229, 84, 115);
+}
+
+.third-page-left-side p {
     color: rgba(39, 39, 39, 0.6);
-    font-family: Lato;
-    font-size: 18px;
+    font-size: 1.1rem;
     margin-top: 24px;
     margin-bottom: 30px;
 }
-.third-page-right-side{
-    /* border: 2px solid black; */
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.third-page-right-side img{
-    width: 318px;
-    height: 420px;
-    /* border: 10px solid green; */
-    border: 2px dashed #E7E1E3;
-    
-}
 
-.fourth-page{
-    width: 80%;
-    margin: 0 auto;
-    /* border: 10px solid red; */
-    margin-top: 130px;
-}
-
-.fourth-page-head{
-    /* border: 2px solid black; */
-    margin: 0 auto;
-    text-align: center;
-}
-
-.fourth-page-head h1{
-    color: rgb(39, 39, 39);
-font-family: Lato;
-font-size: 40px;
-margin-bottom: 20px;
-}
-
-.fourth-page-head p{
-    color: rgba(39, 39, 39, 0.6);
-font-family: Lato;
-font-size: 18px;
-}
-
-.fourth-page-img{
-    display: flex;
-    /* border: 2px solid red; */
-    margin-top: 40px;
-}
-.fourth-page-img img{
-   width: 300px;
-   height: 300px;
-   border: 2px dashed #E7E1E3;
-   margin-left: 7px;
-}
-.email{
-    /* border: 2px solid black; */
-    margin-top: 120px;
-    /* width: 90%;
-    margin: 0 auto; */
-    background-image: url('Rectangle\ 9.png');
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    height: 400px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 120px;
-
-}
-.email h1{
-    color: rgb(39, 39, 39);
-font-family: Lato;
-font-size: 40px;
-}
-.email p{
-    color: rgba(39, 39, 39, 0.6);
-font-family: Lato;
-font-size: 18px;
-margin-top: 16px;
-margin-bottom: 40px;
-}
-.email input{
-    width: 500px;
-    height: 40px;
-    border-radius: 8px;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
-}
-.last-page-btn,
-.third-page-btn{
+.third-page-btn {
     border-radius: 8px;
     background: rgb(229, 84, 115);
-    padding: 15px 35px 15px 35px;
-    border: 0px;
+    color: #ffffff;
+    padding: 16px 36px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
-footer{
+
+.third-page-btn:hover {
+    background: rgb(209, 64, 95);
+}
+
+.third-page-right-side {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-page-right-side img {
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px dashed #E7E1E3;
+}
+
+/* Fourth Page - Instagram Feed & Subscription */
+.fourth-page {
     width: 100%;
-    height: 450px;
-    border: 1px solid black;
+    padding: 80px 10% 0 10%;
+}
+
+.fourth-page-head {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.fourth-page-head h1 {
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.fourth-page-head p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1rem;
+}
+
+.fourth-page-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fourth-page-img img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 2px dashed #E7E1E3;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.fourth-page-img img:hover {
+    transform: scale(1.05);
+}
+
+.email {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('Rectangle 9.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(17, 16, 16);;
+    border-radius: 16px;
 }
-footer h1{
-    font-family: Lato;
-font-size: 48px;
-color: #E55473;
+
+.email h1 {
+    color: rgb(39, 39, 39);
+    font-size: 2.5rem;
+    font-weight: 800;
 }
-footer h2{
-    color: rgba(255, 255, 255, 0.9);
-font-family: Lato;
-font-size: 14px;
-margin-top: 24px;
-margin-bottom: 32px;
+
+.email p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.1rem;
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
-footer p{
+
+.enter-email {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    gap: 16px;
+}
+
+.email input {
+    flex: 1;
+    height: 52px;
+    border-radius: 8px;
+    border: 1px solid rgba(39, 39, 39, 0.15);
+    padding-left: 20px;
+    font-size: 1rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    outline: none;
+}
+
+.email input:focus {
+    border-color: rgb(229, 84, 115);
+}
+
+.last-page-btn {
+    border-radius: 8px;
+    background: rgb(229, 84, 115);
+    color: #ffffff;
+    padding: 0 32px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 52px;
+}
+
+.last-page-btn:hover {
+    background: rgb(209, 64, 95);
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    padding: 60px 10%;
+    background: rgb(17, 16, 16);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #E55473;
+}
+
+footer h1 span {
+    color: #ffffff;
+}
+
+footer h2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+footer p {
     color: rgba(255, 255, 255, 0.4);
-font-family: Lato;
-font-size: 10px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .first-page-left-side-heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-page {
+        flex-direction: column;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .first-page-left-side {
+        align-items: center;
+    }
+
+    .first-page-left-side-heading {
+        font-size: 2.2rem;
+    }
+
+    .second-page {
+        padding: 0 5%;
+    }
+
+    .second-page-top h1, .third-page-left-side h1, .fourth-page-head h1, .email h1 {
+        font-size: 1.8rem;
+    }
+
+    .third-page {
+        flex-direction: column-reverse;
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .third-page-left-side {
+        align-items: center;
+        text-align: center;
+    }
+
+    .enter-email {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .last-page-btn {
+        width: 100%;
+    }
 }
